@@ -1,0 +1,17 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-03-30 14:09:44
+project --topLevelPackage kh.storeroom --projectName StoreRoom --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-03-30 14:09:45
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-03-30 14:09:52
+persistence setup --provider HIBERNATE --database MYSQL 
+entity --class ~.domain.Category
+entity --class ~.domain.Item
+field string name
+field number quantityInStock --type int
+focus --class ~.domain.Category
+field string name
+field set --fieldName items --type ~.domain.Item
+focus --class ~.domain.Item
+field reference --fieldName category --type ~.domain.Category
+web mvc setup
+web mvc all  --package ~.web
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-03-30 17:01:48
