@@ -6,6 +6,11 @@ import org.springframework.roo.addon.tostring.RooToString;
 import kh.storeroom.domain.Category;
 import javax.persistence.ManyToOne;
 
+/**
+ * Item entity.
+ *  
+ * @author Kevin Hooke
+ */
 @RooJavaBean
 @RooToString
 @RooEntity

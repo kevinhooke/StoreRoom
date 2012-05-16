@@ -9,6 +9,11 @@ import java.util.HashSet;
 import javax.persistence.ManyToMany;
 import javax.persistence.CascadeType;
 
+/**
+ * Category entity.
+ *  
+ * @author Kevin Hooke
+ */
 @RooJavaBean
 @RooToString
 @RooEntity
